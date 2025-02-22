@@ -1,3 +1,14 @@
+// add display 
+const display = document.createElement('div');
+
+display.textContent = 'This div is working';
+display.style.backgroundColor = 'lightblue';
+display.style.padding = '20px';
+
+const displayDiv = document.getElementById('display');
+
+displayDiv.appendChild(display);
+
 // basic math operators
 
 function addition (a,b) {
@@ -42,3 +53,4 @@ function operate (operator, a, b) {
             return null
     }
 }
+
