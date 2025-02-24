@@ -3,11 +3,15 @@ const display = document.createElement('input');
 
 display.textContent = '';
 display.readOnly = true;
-display.style.backgroundColor = 'lightblue';
 display.style.padding = '20px';
 const displayDiv = document.getElementById('display');
 
 displayDiv.appendChild(display);
+
+function  appendToDisplay(input){
+    display.value += input;
+}
+
 
 // basic math operators
 
