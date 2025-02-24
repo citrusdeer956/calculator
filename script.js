@@ -1,10 +1,10 @@
 // add display 
-const display = document.createElement('div');
+const display = document.createElement('input');
 
-display.textContent = 'This div is working';
+display.textContent = '';
+display.readOnly = true;
 display.style.backgroundColor = 'lightblue';
 display.style.padding = '20px';
-
 const displayDiv = document.getElementById('display');
 
 displayDiv.appendChild(display);
